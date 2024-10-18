@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Section with Hover Rotation</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+
+  <style>
+    .rotate {
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .hover\:rotate-360:hover {
+      transform: rotate(360deg);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-100">
+
+  <!-- Service Section -->
+  <section id="assignment" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center">
+        <h2 class="text-base font-semibold text-indigo-600 tracking-wide uppercase">Our Services</h2>
+        <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          Tailored Solutions for Your Needs
+        </p>
+        <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+          We provide a variety of services to help your business succeed.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+          <!-- Service 1 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div class="text-indigo-600 mb-4">
+              <!-- Apply hover rotate class directly to the SVG to keep the rotation in place -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto rotate hover:rotate-360" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 17v-6h6v6m-6-6a6 6 0 1112 0v6" />
+              </svg>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 text-center">Consulting Services</h3>
+            <p class="mt-2 text-base text-gray-500 text-center">
+              Expert advice to help you grow and manage your business effectively.
+            </p>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div class="text-indigo-600 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto rotate hover:rotate-360" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M12 8c2.28 0 4-1.72 4-4s-1.72-4-4-4-4 1.72-4 4 1.72 4 4 4zm0 2c-3.31 0-6 2.69-6 6v6h12v-6c0-3.31-2.69-6-6-6z" />
+              </svg>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 text-center">Web Development</h3>
+            <p class="mt-2 text-base text-gray-500 text-center">
+              Professional web design and development services tailored to your business.
+            </p>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div class="text-indigo-600 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto rotate hover:rotate-360" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M9 14l6-6M9 6h.01M6 9h.01M6 6h.01" />
+              </svg>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 text-center">Marketing Solutions</h3>
+            <p class="mt-2 text-base text-gray-500 text-center">
+              Innovative marketing strategies to elevate your brand visibility.
+            </p>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="bg-gray-50 p-6 rounded-lg shadow-md">
+            <div class="text-indigo-600 mb-4">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto rotate hover:rotate-360" fill="none"
+                viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.5v13m-7-6.5h14" />
+              </svg>
+            </div>
+            <h3 class="text-lg leading-6 font-medium text-gray-900 text-center">Graphic Design</h3>
+            <p class="mt-2 text-base text-gray-500 text-center">
+              Creative and visually appealing designs to enhance your brand's identity.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+
+</html>
